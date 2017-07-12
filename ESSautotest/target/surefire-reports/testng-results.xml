@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67025" started-at="2017-06-30T07:56:03Z" finished-at="2017-06-30T07:57:10Z">
+  <suite name="Suite" duration-ms="322741" started-at="2017-07-12T02:22:08Z" finished-at="2017-07-12T02:27:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67025" started-at="2017-06-30T07:56:03Z" finished-at="2017-06-30T07:57:10Z">
+    <test name="Test" duration-ms="322741" started-at="2017-07-12T02:22:08Z" finished-at="2017-07-12T02:27:30Z">
       <class name="example.LoginPageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.LoginPageTest@22f71333]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-06-30T15:56:03Z" finished-at="2017-06-30T15:56:03Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.LoginPageTest@1a407d53]" name="beforeTest" is-config="true" duration-ms="15" started-at="2017-07-12T10:22:08Z" finished-at="2017-07-12T10:22:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:example.LoginPageTest@22f71333]" name="beforeClass" is-config="true" duration-ms="4956" started-at="2017-06-30T15:56:03Z" finished-at="2017-06-30T15:56:08Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:example.LoginPageTest@1a407d53]" name="beforeClass" is-config="true" duration-ms="3621" started-at="2017-07-12T10:22:08Z" finished-at="2017-07-12T10:22:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testLoginEss()[pri:0, instance:example.LoginPageTest@22f71333]" name="testLoginEss" duration-ms="62053" started-at="2017-06-30T15:56:08Z" finished-at="2017-06-30T15:57:10Z">
+        <test-method status="PASS" signature="testLoginEss()[pri:0, instance:example.LoginPageTest@1a407d53]" name="testLoginEss" duration-ms="319105" started-at="2017-07-12T10:22:11Z" finished-at="2017-07-12T10:27:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginEss -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.LoginPageTest@22f71333]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-06-30T15:57:10Z" finished-at="2017-06-30T15:57:10Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.LoginPageTest@1a407d53]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-07-12T10:27:30Z" finished-at="2017-07-12T10:27:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

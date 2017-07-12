@@ -20,13 +20,22 @@ public class LoginPage {
 		
 		public LoginPage(WebDriver driver){
 			this.driver = driver;
-			
 			this.username = driver.findElement(By.id("username"));
-			this.password = driver.findElement(By.id("password"));
-			this.loginbutton = driver.findElement(By.id("login"));
+		    this.password = driver.findElement(By.id("password"));
+	     	this.loginbutton = driver.findElement(By.id("login"));
 		}
 
 		public void login(String userName, String passWord){
+			System.out.println("Start login in Loginpage...");
+			System.out.println("userName="+userName);
+			System.out.println("passWord="+passWord);
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
 			username.sendKeys(userName);
 			password.sendKeys(passWord);
 			loginbutton.submit();

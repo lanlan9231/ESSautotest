@@ -3,8 +3,11 @@ package example;
 import org.testng.annotations.Test;
 
 import com.essautotest.browserdriver.DriverFactory;
+import com.essautotest.pageobjects.EntitlementsPage;
+import com.essautotest.pageobjects.HomePage;
 import com.essautotest.pageobjects.LoginPage;
 import com.essautotest.pageobjects.MainPage;
+import com.essautotest.pageobjects.NavigationSoftWare;
 import com.essautotest.pageobjects.initSetup;
 
 import org.testng.annotations.BeforeTest;
@@ -22,10 +25,16 @@ public class LoginPageTest {
 	  System.out.println("Testing ess...");
 	  MainPage mainpage = new MainPage(this.driver);
 	  mainpage.openMainPage("https://www-sso.toronto.ca.ibm.com/servers/eserver/ess/index.wss");
-	  mainpage.login("bftest04@esd.test","bftest04");
+//	  mainpage.openMainPage("https://wwwbeta-sso.toronto.ca.ibm.com:444/servers/eserver/ess/index.wss");	 
+	  mainpage.login(driver,"bftest04@esd.test","bftest04");
 //	  LoginPage loginpage = new LoginPage(this.driver);
-	  String title = driver.getTitle();	
-	  Assert.assertTrue(title.contains("My Entitled Systems Support"));
+//	  String title = driver.getTitle();	
+//	  Assert.assertTrue(title.contains("My Entitled Systems Support"));
+	  System.out.println("after log in ...");
+	  HomePage homePage = new HomePage(driver);
+	  NavigationSoftWare navigationSoftWare = homePage.clickMyEntitledSoftware(driver);
+	  EntitlementsPage entitlmentsPage = navigationSoftWare.clickEntitlements(driver);
+	  entitlmentsPage = entitlmentsPage.clickContinueButton(driver);
   }
   @BeforeClass
   public void beforeClass() {

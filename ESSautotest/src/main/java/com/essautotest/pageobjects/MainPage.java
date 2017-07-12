@@ -19,10 +19,12 @@ public class MainPage {
 		loginlink = driver.findElement(By.id("signinID"));
 	}
 	
-	public void login(String username, String password){
+	public void login(WebDriver driver, String username, String password){
 		loginlink.click();
 		System.out.println("click signin...");
-		LoginPage loginpage = new LoginPage(this.driver);
+		
+		LoginPage loginpage = new LoginPage(driver);
+		System.out.println("Init loginpage...");
 		loginpage.login(username,password);
 	}
 	
