@@ -7,6 +7,7 @@ import com.essautotest.pageobjects.EntitlementsPage;
 import com.essautotest.pageobjects.HomePage;
 import com.essautotest.pageobjects.LoginPage;
 import com.essautotest.pageobjects.MainPage;
+import com.essautotest.pageobjects.MyEntitledSoftWarePage;
 import com.essautotest.pageobjects.NavigationSoftWare;
 import com.essautotest.pageobjects.initSetup;
 
@@ -32,8 +33,8 @@ public class LoginPageTest {
 //	  Assert.assertTrue(title.contains("My Entitled Systems Support"));
 	  System.out.println("after log in ...");
 	  HomePage homePage = new HomePage(driver);
-	  NavigationSoftWare navigationSoftWare = homePage.clickMyEntitledSoftware(driver);
-	  EntitlementsPage entitlmentsPage = navigationSoftWare.clickEntitlements(driver);
+	  MyEntitledSoftWarePage myEntitledSoftWarePage = homePage.clickMyEntitledSoftware(driver);
+	  EntitlementsPage entitlmentsPage = myEntitledSoftWarePage.clickEntitlements(driver);
 	  entitlmentsPage = entitlmentsPage.clickContinueButton(driver);
   }
   @BeforeClass

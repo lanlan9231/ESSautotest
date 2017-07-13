@@ -31,14 +31,14 @@ public class NavigationBase{
 	}
 	
 	public HomePage clickMyEntitledSystemsSupport(WebDriver driver){
-		driver.findElement(By.linkText("My entitled software")).click();
+		driver.findElement(By.linkText("My Entitled Systems Support")).click();
 		return PageFactory.initElements(driver, HomePage.class);
 	}	
-	public NavigationSoftWare clickMyEntitledSoftware(WebDriver driver){
+	public MyEntitledSoftWarePage clickMyEntitledSoftware(WebDriver driver){
 		System.out.println(" before findElement");
         driver.findElement(By.linkText("My entitled software")).click();
 		System.out.println(" before clickMyEntitledSoftware");
-		return PageFactory.initElements(driver, NavigationSoftWare.class);
+		return PageFactory.initElements(driver, MyEntitledSoftWarePage.class);
 	}
 
 }
